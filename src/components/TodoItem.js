@@ -17,7 +17,7 @@ class TodoItem extends Component {
         
         return (
             <div style={ this.getStyle() }>
-                <p>
+                <p style={{marginRight: '10px'}} >
                     <input type="checkbox" onChange={this.props.markComplete.bind(this, id)} /> { ' '}
                     {title}
                     <button onClick={this.props.delTodo.bind(this, id)} style={buttonStyle}>Delete</button>
@@ -30,7 +30,7 @@ class TodoItem extends Component {
 const buttonStyle = {
     backgroundColor: '#ff0000',
     color:'#ffffff',
-    borderRadius:'30%',
+    borderRadius:'20%',
     float: 'right',
     border: 'none',
     cursor: 'pointer'
