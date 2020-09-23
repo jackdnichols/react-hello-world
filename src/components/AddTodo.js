@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class AddTodo extends Component {
 
@@ -49,6 +50,11 @@ const buttonStyle = {
     float: 'right',
     border: 'none',
     cursor: 'pointer',    
+}
+
+// PropTypes
+AddTodo.propTypes = {
+    addTodo: PropTypes.func.isRequired,
 }
 
 export default AddTodo;
